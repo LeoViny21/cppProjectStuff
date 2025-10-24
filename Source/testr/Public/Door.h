@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Door.generated.h"
 
-DECLARE_DELEGATE(FOpenDoorSignature);
+//DECLARE_DELEGATE(FOpenDoorSignature);
 
 UCLASS()
 class TESTR_API ADoor : public AActor
@@ -20,8 +20,8 @@ public:
 	UStaticMeshComponent* mesh;
 
 	// Function signature
-	UPROPERTY()
-	FOpenDoorSignature OpenDoorDelegate;
+	//UPROPERTY()
+	//FOpenDoorSignature OpenDoorDelegate;
 	UFUNCTION()
 	void OpenDoor();
 

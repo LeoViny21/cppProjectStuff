@@ -12,7 +12,7 @@ ADoor::ADoor()
 
 }
 void ADoor::OpenDoor() {
-
+	UE_LOG(LogTemp, Warning, TEXT("DoorOpening"));
 }
 // Called when the game starts or when spawned
 void ADoor::BeginPlay()
