@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Door.generated.h"
 
-//DECLARE_DELEGATE(FOpenDoorSignature);
+DECLARE_DELEGATE(FOpenDoorSignature);
 
 UCLASS()
 class TESTR_API ADoor : public AActor
@@ -21,10 +21,10 @@ public:
 
 	// Function signature
 	//UPROPERTY()
-	//FOpenDoorSignature OpenDoorDelegate;
+	FOpenDoorSignature OpenDoorDelegate;
+private:
 	UFUNCTION()
 	void OpenDoor();
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -7,6 +7,8 @@
 #include "Components/BoxComponent.h"
 #include "PressurePlate.generated.h"
 
+//seting up a delgate
+DECLARE_DELEGATE(FPressurePlate);
 
 UCLASS()
 class TESTR_API APressurePlate : public AActor
